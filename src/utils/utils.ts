@@ -16,7 +16,7 @@ export const alchemyApiKey = process.env.REACT_APP_ALCHEMY_API_KEY;
 
 export const CUSTOM_SCHEMAS = {
   MET_IRL_SCHEMA:
-    "0xd6b8c2cfb0424e3e5fe8893ebb2c3fbf0dafa333ab782dd8a2afa4047b2de19d",
+    "0x5125ee7c76ccb61befdda52d8aafb211bcb3998e3be4640295abc66c9f6fe778",
   CONFIRM_SCHEMA:
     "0xb96446c85ce538c1641a967f23ea11bbb4a390ef745fc5a9905689dbd48bac86",
 };

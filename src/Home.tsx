@@ -222,10 +222,12 @@ function Home() {
             } else {
               setAttesting(true);
               try {
-                const schemaEncoder = new SchemaEncoder("uint256 amount, string memo");
+                const schemaEncoder = new SchemaEncoder("uint256 amount, string memo, string companyName, string iban");
                 const encoded = schemaEncoder.encodeData([
                   { name: "amount", type: "uint256", value: `${amount}` },
-                  { name: "memo", type: "string", value: `${memo}` }
+                  { name: "memo", type: "string", value: `${memo}` },
+                  { name: "companyName", type: "string", value: `${companyName}` },
+                  { name: "iban", type: "string", value: `${iban}` }
                 ]);
 
                 invariant(signer, "signer must be defined");
